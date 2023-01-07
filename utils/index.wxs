@@ -1,0 +1,18 @@
+//单位数字补充0
+function padLeftZero(time){
+  time = time + ""
+  return ("00" + time).slice(time.length)
+}
+
+function formatDuration(duration){
+  duration = duration / 1000
+  var hour = padLeftZero(Math.floor(duration / 60 / 60))
+  var minute = padLeftZero(Math.floor(duration / 60) % 60)
+  var second = padLeftZero(Math.floor(duration) % 60)
+  return hour + ":" + minute + ":" + second
+}
+
+module.exports={
+  padLeftZero:padLeftZero,
+  formatDuration:formatDuration
+}

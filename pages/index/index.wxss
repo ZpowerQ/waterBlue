@@ -1,0 +1,63 @@
+/**index.wxss**/
+page{
+  overflow: hidden;
+}
+.van_notice{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.time{
+  position: absolute;
+  top: 100rpx;
+  right: 20rpx;
+  font-size: 35rpx;
+  z-index: 1;
+}
+.bg_img{
+  z-index: -1;
+  filter: blur(1.5px);
+  width: 100%;
+}
+
+.w_content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 300rpx;
+}
+.status{
+  text-align: center;
+  margin: 20rpx 0;
+  white-space: nowrap;
+}
+.van-button--large{
+  margin-bottom: 25rpx;
+}
+.popup_title{
+  text-align: center;
+  padding: 20rpx;
+  letter-spacing: 2rpx;
+}
+.loading{
+  padding: 20rpx;
+  display: block;
+  text-align: center;
+}
+.service_item{
+  margin:15rpx 40rpx;
+  font-size: 40rpx;
+  background-color: #efefef;
+  border-radius: 15rpx;
+  padding: 25rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.van_tag{
+  display: block;
+}
